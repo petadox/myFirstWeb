@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans&family=Yanone+Kaffeesatz&display=swap);
+* {
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1.5px;
+}
+/*----------------------Estilos del header----------------------*/
+.header {
+    height: 60px;
+}
+.header .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+.logo, .icon-menu {
+    margin: 5px;
+    color: white;
+}
+.fas.fa-bars {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: rgb(25, 149, 251);
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/*----------------------Estilos del menu----------------------*/
+.nav {
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.4s;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__link {
+    display: block;
+    padding: 15px;
+    background: rgb(25, 149, 251);
+    text-decoration: none;
+    color: white;
+}
+.menu__link:hover {
+    background: white;
+    color: rgb(25, 149, 251);
+}
+.mostrar {
+    left: 0;
+}
+
+/*----------------------Estilos de banner----------------------*/
+
+.banner {
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+}
