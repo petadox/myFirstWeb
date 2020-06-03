@@ -72,8 +72,29 @@ h1, h2, h3, h4, h5, h6 {
 /*----------------------Estilos de banner----------------------*/
 
 .banner {
-    padding-top: 45px;
     margin-top: -60px;
     position: relative;
     z-index: -1000;
+}
+
+.banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.banner__txt {
+    display: none;
+}
+
+/*----------------------Estilos de Info----------------------*/
+.info__columna {
+    background: rgb(25, 149, 251);
+    color: white;
+    padding: 15px;
+    margin-bottom: 30px;
 }
